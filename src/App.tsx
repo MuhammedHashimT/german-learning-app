@@ -12,7 +12,7 @@ function App() {
   useEffect(() => {
     const page = localStorage.getItem("page");
     if (page) {
-      setCurrentPage(parseInt(page));
+      // setCurrentPage(parseInt(page));
     }
   }, []);
 
