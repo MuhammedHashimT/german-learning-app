@@ -10,9 +10,9 @@ const Page1 = (props: Page1Props) => {
 
   return (
     <div
-      className={`w-screen absolute ${
-        props.currentPage == 1 ? "z-50 " : "-translate-x-full"
-      }  transition-all delay-75 duration-[2000ms] flex justify-center items-center h-screen `}
+      className={`w-[200vw] absolute ${
+        props.currentPage == 1 ? "z-50 " : "trans opacity-0"
+      } right-0 pl-[100vw] transition-all delay-75 duration-[2000ms] flex justify-center items-center h-screen `}
     >
       <div className="flex flex-col items-center justify-center space-y-8 bg-gradient-to-r from-blue-500 to-orange-500 text-transparent bg-clip-text bg-white">
         <h1

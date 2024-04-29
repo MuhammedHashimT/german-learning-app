@@ -79,13 +79,13 @@ const Page4 = (props: PageProps) => {
   return (
     <>
       <div
-        className={` absolute ${
+        className={`w-[200vw] h-screen absolute ${
           props.currentPage == 4
-            ? "block z-40"
+            ? "block z-40 "
             : props.currentPage < 4
-            ? "opacity-0  "
-            : "-translate-x-full"
-        }     transition-all delay-75 duration-1000`}
+            ? "opacity-0 "  
+            : "trans opacity-0"
+        }  right-0 pl-[100vw]  transition-all delay-75 duration-1000`}
       >
         <div className="w-screen h-screen flex  ">
           <div className="w-5/6 h-full">

@@ -6,10 +6,14 @@ interface Page2Props {
 }
 
 const Page6 = (props: Page2Props) => {
- 
 
-  
-
+  const [qOne , setQOne ] =  useState(0)
+  const [qTwo , setQTwo ] =  useState(0)
+  const [qThree , setQThree ] =  useState(0)
+  const [qFour , setQFour ] =  useState(0)
+  const [qFive , setQFive ] =  useState(0)
+  const [qSix , setQSix ] =  useState(0)
+  const [qSeven , setQSeven ] =  useState(0)
   return (
     <>
       <div
@@ -45,61 +49,123 @@ const Page6 = (props: Page2Props) => {
               />
             </div>
             <div className="col-span-3 flex flex-col  row-span-2 col-start-1 row-start-3   rounded-2xl overflow-hidden  justify-center">
-              <p
-              className=" text-gray-700 text-2xl p-4 text-center font-bold"
-              >Heute ist Samstag. Die 
-                <select name="" id="" className="
+              <p className=" text-gray-700 text-2xl p-4 text-center font-bold">
+                Heute ist Samstag. Die
+                <select
+                  name=""
+                  id=""
+                  className="
                 bg-gradient-to-r from-blue-500 to-orange-500 text-transparent bg-clip-text border-solid border-2 hover:text-white hover:bg-clip-padding transition-all duration-500  text-lg py-1 px-8 font-bold rounded-2xl m-2
-                ">
-                  <option value="" className="
+                "
+                onChange={
+                  (e)=>{setQOne(parseInt(e.target.value))}
+                }
+                >
+                  <option
+                    value=""
+                    className="
                   text-black bg-white
-                  ">Select</option>
-                  <option value="" className="
+                  "
+                  >
+                    Select
+                  </option>
+                  <option
+                    value=""
+                    className="
                   text-black bg-white
-                  ">Mond</option>
-                  <option value="" className="
+                  "
+                  >
+                    Mond
+                  </option>
+                  <option
+                    value=""
+                    className="
                   text-black bg-white
-                  ">Stern</option>
+                  "
+                  >
+                    Stern
+                  </option>
                 </select>
-               Sonne scheint. Dafi
-arbeitet im  <select name="" id="" className="
+                Sonne scheint. Dafi arbeitet im{" "}
+                <select
+                  name=""
+                  id=""
+                  className="
                 bg-gradient-to-r from-blue-500 to-orange-500 text-transparent bg-clip-text border-solid border-2 hover:text-white hover:bg-clip-padding transition-all duration-500  text-lg py-1 px-8 font-bold rounded-2xl m-2
-                ">
-                  <option value="" className="
+                "
+                >
+                  <option
+                    value=""
+                    className="
                   text-black bg-white
-                  ">Select</option>
-                  <option value="" className="
+                  "
+                  >
+                    Select
+                  </option>
+                  <option
+                    value=""
+                    className="
                   text-black bg-white
-                  ">Mond</option>
-                  <option value="" className="
+                  "
+                  >
+                    Mond
+                  </option>
+                  <option
+                    value=""
+                    className="
                   text-black bg-white
-                  ">Stern</option>
-                </select> Garten. Der Zaun ist kaputt. Dafi holt
-einen Hammer und Nägel. Er repariert den  <select name="" id="" className="
+                  "
+                  >
+                    Stern
+                  </option>
+                </select>{" "}
+                Garten. Der Zaun ist kaputt. Dafi holt einen Hammer und Nägel.
+                Er repariert den{" "}
+                <select
+                  name=""
+                  id=""
+                  className="
                 bg-gradient-to-r from-blue-500 to-orange-500 text-transparent bg-clip-text border-solid border-2 hover:text-white hover:bg-clip-padding transition-all duration-500  text-lg py-1 px-8 font-bold rounded-2xl m-2
-                ">
-                  <option value="" className="
+                "
+                >
+                  <option
+                    value=""
+                    className="
                   text-black bg-white
-                  ">Select</option>
-                  <option value="" className="
+                  "
+                  >
+                    Select
+                  </option>
+                  <option
+                    value=""
+                    className="
                   text-black bg-white
-                  ">Mond</option>
-                  <option value="" className="
+                  "
+                  >
+                    Mond
+                  </option>
+                  <option
+                    value=""
+                    className="
                   text-black bg-white
-                  ">Stern</option>
-                </select> Zaun</p>
+                  "
+                  >
+                    Stern
+                  </option>
+                </select>{" "}
+                Zaun
+              </p>
 
-                <button
-                  className="bg-gradient-to-r from-blue-500 to-orange-500 text-transparent bg-clip-text border-solid border-2 hover:text-white hover:bg-clip-padding transition-all duration-500  text-lg py-1 px-8 font-bold rounded-2xl m-2 w-1/4 mx-auto"
-                  onClick={
-                    () => {
-                      // props.setCurrentPage(props.currentPage + 1);
-                      // localStorage.setItem("page", `${props.currentPage + 1}`);
-                    }
-                  }  
-                >Submit</button>
+              <button
+                className="bg-gradient-to-r from-blue-500 to-orange-500 text-transparent bg-clip-text border-solid border-2 hover:text-white hover:bg-clip-padding transition-all duration-500  text-lg py-1 px-8 font-bold rounded-2xl m-2 w-1/4 mx-auto"
+                onClick={() => {
+                  // props.setCurrentPage(props.currentPage + 1);
+                  // localStorage.setItem("page", `${props.currentPage + 1}`);
+                }}
+              >
+                Submit
+              </button>
             </div>
-
           </div>
           <div className="w-full lg:w-1/6 h-[10%] lg:h-full flex  lg:flex-col items-end justify-end gap-4  p-8">
             <button

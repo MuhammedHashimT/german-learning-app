@@ -7,13 +7,13 @@ const Page2 = (props: Page2Props) => {
   return (
     <>
       <div
-        className={` absolute ${
+        className={`w-[200vw] h-screen absolute ${
           props.currentPage == 2
-            ? "block z-40"
+            ? "block z-40 "
             : props.currentPage < 2
-            ? "opacity-0  "
-            : "-translate-x-full"
-        }     transition-all delay-75 duration-1000`}
+            ? "opacity-0 "
+            : "trans opacity-0"
+        }  right-0 pl-[100vw]  transition-all delay-75 duration-1000`}
       >
         <div className="w-screen h-screen  flex flex-col lg:flex-row">
           <div className="w-full lg:w-5/6  h-[90%] lg:h-full grid grid-cols-4 grid-rows-10 gap-4 pl-2 lg:pl-48 md:pl-36 xl:pl-56  pr-2 md:pr-28 lg:32 xl:pr-40 py-8">
